@@ -1,11 +1,12 @@
-from flask import Flask  # flask is model & Flask is class
+# flask is model & Flask,render_templete is class
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
-  return "<h1>Hello, Ruzaith!</h1>"
+def hello_jovin():
+  return render_template("home.html")
 
 
 if __name__ == "__main__":
