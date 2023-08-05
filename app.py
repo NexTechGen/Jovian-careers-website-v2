@@ -34,7 +34,7 @@ JOBS = [
 def hello_jovin():
   return render_template(
     "home_bootstrap.html", jobs=JOBS,
-    company_name="Jovian")  # home.html or home_bootstrap.html
+    company_name="Riyaa")  # home.html or home_bootstrap.html
 
 
 @app.route("/api/jobs")
